@@ -1,12 +1,7 @@
 #!/usr/bin/env python
 
-
-# Imports to start Isaac Sim from this script
 import carb
-
 from isaacsim import SimulationApp
-
-
 simulation_app = SimulationApp({
     "headless": False,
     "extra_args": [
@@ -74,10 +69,6 @@ class CirclePersonController(PersonController):
 
 # Auxiliary scipy and numpy modules
 from scipy.spatial.transform import Rotation
-
-# -------------------------------------------------------------------------------------------------
-# Define the PegasusApp class where the simulation will be run
-# -------------------------------------------------------------------------------------------------
 class PegasusApp:
     """
     A Template class that serves as an example on how to build a simple Isaac Sim standalone App.
