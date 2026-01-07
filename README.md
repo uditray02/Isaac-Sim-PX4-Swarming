@@ -157,7 +157,23 @@ git submodule update --init --recursive
 make px4_sitl_default none
 ```
 
+# Step 3 : Linking the Simulator permanently with Nvidia Isaac Sim
+```bash
+cd {$PATH_TO_SIMULATOR_INSTALLATION}
+ls
 
+#You must see:
+#link_app.sh
+#extensions/
+#app/
+
+chmod +x link_app.sh
+./link_app.sh --path $ISAACSIM_PATH
+
+Verify : ls -l
+Run: ./app/isaac-sim.sh --ext-folder extensions --enable pegasus.simulator 
+
+```
 
 
 
