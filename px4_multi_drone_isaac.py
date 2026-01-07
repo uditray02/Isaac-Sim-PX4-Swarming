@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python 
 
 # Imports to start Isaac Sim from this script
 import carb
