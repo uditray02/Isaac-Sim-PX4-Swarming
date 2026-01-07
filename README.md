@@ -246,5 +246,10 @@ MAVLink UDP ports must match PX4 / SITL / simulator configuration
 Do not mix system-built and pip-installed MAVSDK binaries
 
 
-# Step 7 : MAVSDK Server – Build, Install, and Run (Linux)
+# Step 7 : RUN 
+```bash
+Run ''px4_multi_drone_isaac.py'' to get 5x drone in the world sim
+Run ''takeoff-together-offboard.py'' to get all of the drones arm and takeoff in offboard mode
+Run ''sequence-swarming.py'' to swarm all the drones together and drone(2/3) as the leader controlling all the drones
+```
 
