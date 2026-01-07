@@ -118,6 +118,19 @@ isaac_run() {
     fi
 }
 ```
+### c. Running Isaac Sim
+```bash
+isaac_run --help
+
+# Run the simulator
+isaac_run
+```
+### d. Installing the drone simulator(Pegasus)
+```bash
+git clone https://github.com/PegasusSimulator/PegasusSimulator.git
+
+Then add the SIMULATOR inside ISAAC SIM by going to the Extensions Tab and enabling it
+```
 
 
 
@@ -196,18 +209,7 @@ Example configuration:
 MAVSDK gRPC port: 50040
 
 MAVLink UDP port: 14540
-
-~/.local/lib/python3.10/site-packages/mavsdk/bin/mavsdk_server \
--p 50040 udp://:14540
-
-~/.local/lib/python3.10/site-packages/mavsdk/bin/mavsdk_server -p 50040 udp://:14540 &
-~/.local/lib/python3.10/site-packages/mavsdk/bin/mavsdk_server -p 50041 udp://:14541 &
-~/.local/lib/python3.10/site-packages/mavsdk/bin/mavsdk_server -p 50042 udp://:14542 &
-~/.local/lib/python3.10/site-packages/mavsdk/bin/mavsdk_server -p 50043 udp://:14543 &
-~/.local/lib/python3.10/site-packages/mavsdk/bin/mavsdk_server -p 50044 udp://:14544 &
-
-
-
+```
 Port Usage Rules
 
 One MAVSDK server per vehicle
