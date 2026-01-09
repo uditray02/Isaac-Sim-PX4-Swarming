@@ -1,4 +1,4 @@
-# Isaac-Sim-with-PX4-Swarming
+# Isaac-Sim-with-PX4-Swarming + Detection
 
 
 # Step 1 : Installation of Isaac Sim + Drone Simulator
